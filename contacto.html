@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+<header class="main-header">
+
+    <input type="checkbox" id="menu">
+
+    <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+                <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+                <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+            </li>
+            <li class="nav-bar__nav-item">
+                <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-bar__nav-item">
+                <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <div class="search-bar__logo-container">
+            <img src="img/mas-img/logo-ico.ico" alt="logo">
+        </div>
+        <form class="search-bar__form-container">
+            <label class="search-bar__form-label" for="busqueda"> ¿Que estás buscando? </label>
+            <input class="search-bar__form-search" id="busqueda" type="search">
+            <input class="search-bar__form-submit" type="submit" value="Buscar">
+        </form>
+        <div class="search-bar__carrito-container"
+            style="background-image: url(img/mas-img/bolsa-de-la-compra-ico.ico);">
+
+        </div>
+        <div class="menu-toggle">
+            <label class="menu-toggle__label" for="menu">
+                <span class="menu-toggle__pan-arriba"></span>
+                <span class="menu-toggle__medallon"></span>
+                <span class="menu-toggle__pan-abajo"></span>
+            </label>
+        </div>
+    </div>
+</header>
+
 <body>
-    <h1>Contacto</h1>
+    <h1 class="section-contacto">Sigamos Conectados</h1>
+
+    <h2>Recibí promociones y noticias antes que nadie</h2>
+    <form action="/form" method="post" class="form-contain">
+        <div><label for="nombre y apellido">Nombre y Apellido:*</label>
+            <input class="inputtipo1" id="nombre" name="Nombre y Apellido" type="text" required autofocus
+                autocomplete="off">
+        </div>
+
+        <div>
+            <label for="email">Dirección de Correo Electrónico:*</label>
+            <input class="inputtipo1" id="email" name="email" type="email" placeholder="Ej: mail@gmail.com" required
+                autofocus autocomplete="off">
+        </div>
+
+        <div>
+            <label for="comentarios">Dejanos tus comentarios...</label><br>
+            <textarea class="inputtipo1" id="comentarios" name="comentarios"></textarea>
+        </div>
+
+
+        <div class="newsletter">
+            <li class="envio-gratis" style="list-style-image: url(img/mas-img/Entrega_Home.png)">Envío Gratis<br> Para
+                compras superiores a $5.000</li>
+            <li class="cuotas" style="list-style-image:url(img/mas-img/Cuotas.png)">Cuotas sin interés<br>Pagá con Visa,
+                Amex y Master en 3 y 6 cuotas sin interés</li>
+            <li class="entregas" style="list-style-image:url(img/mas-img/cambios.png)">Entregas en Tiendas <br> Retirá
+                tu pedido en la tienda más cercana</li>
+        </div>
+
+        <footer class="footer__content">
+            <p>Copyright© – Todos los Derechos Reservados - Río Cuarto – Córdoba – Argentina -Desarrollo y soporte:
+                Connecticus S.A.S.</p>
+        </footer>
 </body>
+
 </html>

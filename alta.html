@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Alta Producto</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <h1>Alta</h1>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <img class=logo src="img/mas-img/logo-ico.ico" alt="logo">
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"> ¿Que estás buscando? </label>
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <div class="search-bar__carrito-container"
+                style="background-image: url(img/mas-img/bolsa-de-la-compra-ico.ico);">
+
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="section-alta">Alta de Productos</h1>
+
+    <section class="section-form">
+        <form class="Form-de-alta" action="alta.php" method="post">
+            <input type="hidden">
+            <div>
+                <label for="nombre">Nombre del Producto:</label>
+                <input id="nombre_producto" name="Nombre del Producto" autofocus required minlength="5">
+            </div>
+            <div>
+                <label for="Precio">Precio:</label>
+                <input type="number" id="precio" name="Precio" required min="0">
+            </div>
+            <div>
+                <label for="Stock">Stock:</label>
+                <input type="number" id="stock" name="Stock">
+            </div>
+            <div>
+                <label for="Marca">Marca:</label>
+                <select id="marca" name="Marca" placeholder="Marca">
+                    <option value="">Selección Marca</option>
+                    <option value="001">Iphone</option>
+                    <option value="002">Logi</option>
+                    <option value="003">HP</option>
+                    <option value="004">Samsung</option>
+                    <option value="005">Mac</option>
+                    <option value="006">No Asignada </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="Foto">
+            </div>
+            <div>
+                <label for="categoria">Categoría:</label>
+                <br>
+                <select id="categoria" name="categoria" size="8" multiple>
+                    <option value="101">Notebook</option>
+                    <option value="102">Celular</option>
+                    <option value="103">Auriculares</option>
+                    <option value="104">Teclado y mouse</option>
+                    <option value="105">Pads</option>
+                    <option value="106">Agendas y planner</option>
+                    <option value="107">Fundas</option>
+                    <option value="107">Sillas</option>
+                    <option value="108">Tablet</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="detalles">Otras consideraciones:</label>
+                <br>
+                <textarea id="detalles" name="detalles"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="envio" name="envio" value="si">
+                <label for="envio">Envío sin cargo</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Dar Alta">
+                <input type="reset" value="Restablecer">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer__content">
+        <p>Copyright© – Todos los Derechos Reservados - Río Cuarto – Córdoba – Argentina -Desarrollo y soporte:
+            Connecticus S.A.S.</p>
+    </footer>
+
 </body>
+
 </html>

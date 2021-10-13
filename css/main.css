@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 *,
 *::after,
 *::before {
@@ -9,10 +10,11 @@
 
 body {
   box-sizing: border-box;
+  background-color: #FEF4F9;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .u-text-align-center {
@@ -35,13 +37,15 @@ body {
   outline: none;
   flex-grow: 1;
   width: 220px;
-  max-width: 300px;
-  height: 400px;
+  width: 100%;
+  max-width: 320px;
+  height: 480px;
+  margin-top: 30px;
   overflow: hidden;
   display: block;
   position: relative;
   isolation: isolate;
-  color: #fcfdfe;
+  color: #FEF4F9;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.4);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -63,14 +67,14 @@ body {
 .card:hover .card__image {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
   clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
-  transform: scale(1.1) rotate(-2deg);
+  transform: scale(1.1) rotate(-1deg);
   transition-delay: 0s;
 }
 .card__content {
   position: absolute;
   bottom: 0;
   padding: 3em 1em 1em;
-  height: 230px;
+  height: 280px;
   width: 100%;
   z-index: -1;
   transition: all 0.2s;
@@ -79,34 +83,34 @@ body {
   padding-top: 4em;
 }
 .card:nth-child(10n+1) .card__content {
-  background-image: linear-gradient(to top, #b429f9, #26c5f3);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+2) .card__content {
-  background-image: linear-gradient(to top, #af1239, #cce269);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+3) .card__content {
-  background-image: linear-gradient(to top, #0b3866, #3ddab2);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+4) .card__content {
-  background-image: linear-gradient(to top, #f40752, #7c65a9);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+5) .card__content {
-  background-image: linear-gradient(to top, #1c3b41, #69d449);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+6) .card__content {
-  background-image: linear-gradient(to top, #0a5df8, #ed2d53);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+7) .card__content {
-  background-image: linear-gradient(to top, #661069, #30d26e);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+8) .card__content {
-  background-image: linear-gradient(to top, #702b19, #cec360);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+9) .card__content {
-  background-image: linear-gradient(to top, #034a66, #ced11a);
+  background-color: #FEF4F9;
 }
 .card:nth-child(10n+10) .card__content {
-  background-image: linear-gradient(to top, #ec458d, #474ed7);
+  background-color: #FEF4F9;
 }
 @media (min-width: 1024px) {
   .card {
@@ -137,6 +141,44 @@ body {
   }
 }
 
+.section-cards__header {
+  background-color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.card__heading {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
+}
+
+.intro-cards {
+  font-family: "Italianno", cursive;
+  font-size: 45px;
+}
+
+.card__description {
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  color: black;
+}
+
+.footer__content {
+  background-color: #938EBB;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 /*********************************
             HEADER
 *********************************/
@@ -154,32 +196,37 @@ body {
 }
 
 #menu:checked ~ .search-bar .menu-toggle__label {
-  background-color: yellow;
+  background-color: #938EBB;
 }
 
 /*********************************
             NAV BAR
 *********************************/
 .nav-bar {
-  background-color: mediumturquoise;
+  background-color: #938EBB;
+  width: auto;
+  padding: auto;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .nav-bar__nav-list {
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  justify-content: space-between;
+  color: #fff;
 }
 
 .nav-bar__nav-item {
   text-align: center;
-  background-color: pink;
+  background-color: #938EBB;
+  text-transform: uppercase;
 }
 
 .nav-bar__nav-link {
   display: block;
-  background-color: purple;
-  color: #fff;
-  padding: 1em 2em;
+  background-color: #938EBB;
+  padding: 1em 2.5em;
   text-decoration: none;
 }
 
@@ -187,43 +234,61 @@ body {
             SEARCH BAR
 *********************************/
 .search-bar {
-  background-color: olivedrab;
+  background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 8px #938EBB;
+  height: 25%;
 }
 
-.search-bar__logo-container,
 .search-bar__form-container {
-  padding: 1em;
+  padding: 3em;
 }
 
 .search-bar__logo-container {
-  background-color: yellow;
+  background-color: transparent;
+  padding: auto;
 }
 
 .search-bar__form-container {
-  background-color: gold;
-  flex-basis: 100%;
   display: flex;
+  flex-basis: 100%;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .search-bar__form-label {
-  background-color: greenyellow;
+  width: 25%;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: right;
+  text-decoration: underline;
+  padding-right: 6px;
 }
 
 .search-bar__form-search {
-  background-color: deeppink;
-  width: 70%;
+  background-color: #fff;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .search-bar__form-submit {
-  background-color: darkslategray;
+  background-color: #fff;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .search-bar__carrito-container {
   flex: 0 0 3em;
-  background-color: goldenrod;
+  background-image: url(../../img/mas-img/bolsa-de-la-compra-ico.ico);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  margin-right: 15px;
+  align-self: center;
 }
 
 /*********************************
@@ -231,7 +296,7 @@ body {
 *********************************/
 .menu-toggle {
   display: none;
-  background-color: red;
+  background-color: #A42121;
   flex: 0 0 3em;
   position: relative;
   cursor: pointer;
@@ -239,7 +304,7 @@ body {
 
 .menu-toggle__label {
   display: block;
-  background-color: black;
+  background-color: #fff;
   width: 100%;
   height: 100%;
 }
@@ -248,7 +313,7 @@ body {
 .menu-toggle__medallon,
 .menu-toggle__pan-abajo {
   display: block;
-  background-color: #333;
+  background-color: #fff;
   height: 0.2em;
   position: absolute;
   left: 0.5em;
@@ -287,8 +352,8 @@ body {
   }
 }
 .section-cards {
-  background-color: #f1f2f3;
-  padding: 1em;
+  background-color: #fff;
+  padding: 3.5em;
 }
 
 .cards-container {
@@ -302,4 +367,86 @@ body {
   .cards-container {
     gap: 2em;
   }
+}
+.section-contacto {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-size: 55px;
+  padding-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-contain {
+  text-align: center;
+  padding-top: 40px;
+  line-height: 30px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 15px;
+  border-bottom: solid 3px black;
+}
+
+.section-nosotros {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-nosotros {
+  background-color: #938EBB;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
+  opacity: 1;
+  transform: translateY(0px);
+  padding: 5 px;
+  margin-top: 2px;
+}
+
+.title-nosotros {
+  text-align: center;
+  font-size: 65px;
+  padding: 35px;
+  font-family: "Italianno", cursive;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 0;
+  padding: 3px;
+}
+
+.img-nosotros {
+  margin: auto;
+  width: 100%;
+  -o-object-position: 50px 0;
+     object-position: 50px 0;
+}
+
+.descrip-nosotros {
+  padding: 15px;
+  text-align: left;
+}
+
+.section-alta {
+  text-align: center;
+  font-size: 60px;
+  padding: 35px;
+  margin-top: 40px;
+  font-family: "Italianno", cursive;
+}
+
+.section-form {
+  width: 100%;
+  text-align: center;
 }
