@@ -160,16 +160,16 @@
 
 }
 
-.footer__content{
-    background-color: #938EBB;
+.footer_content{
+    background-color: #FEF4F9;
     width: 100%;
     height: auto;
     padding: 5px;
     font-size: 15px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
+    
 }
 
-
+.footer-content{
+    background-color: #938EBB;
+    text-align: center;
+}
