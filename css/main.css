@@ -169,7 +169,7 @@ body {
 }
 
 .footer_content {
-  background-color: #FEF4F9;
+  background-color: #ded5f0;
   width: 100%;
   height: auto;
   padding: 5px;
@@ -294,6 +294,18 @@ body {
   align-self: center;
 }
 
+.search_image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 300px;
+}
+
+.image-header {
+  display: flex;
+  flex-direction: row;
+}
+
 /*********************************
             MENU TOGGLE
 *********************************/
@@ -401,7 +413,7 @@ h2 {
 }
 
 .footer__content {
-  background-color: #938EBB;
+  background-color: #ded5f0;
 }
 
 .section-nosotros {
@@ -452,18 +464,18 @@ h2 {
 
 .section-alta {
   text-align: center;
-  font-size: 60px;
+  font-size: 55px;
   padding: 35px;
   margin-top: 40px;
   font-family: "Italianno", cursive;
 }
 
 .section-form {
-  width: 80%;
+  width: 50%;
   text-align: center;
   background-color: #a19dbe69;
   margin-right: 60px;
-  margin-left: 100px;
+  margin-left: 300px;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
