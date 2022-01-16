@@ -53,7 +53,6 @@ class FormularioAlta {
             this.camposValidos[3] &&
             this.camposValidos[4] &&
             this.camposValidos[5]
-            // this.camposValidos[6]
         
         return !valido
     }
@@ -81,10 +80,8 @@ class FormularioAlta {
             precio: this.inputs[1].value,
             stock: this.inputs[2].value,
             foto: this.inputs[3].value,
-            // marca: this.inputs[3].value,
             categoria: this.inputs[4].value,
             detalles: this.inputs[5].value,
-            
             envio: this.inputs[6].checked,
         }
     }
@@ -101,39 +98,13 @@ class FormularioAlta {
     }
 }
 
-// const renderTablaAlta = async (validos, productos) => {
-// //  ir a buscar traer
-// // then entonces
-//     try{
-//         let plantillaHbs = await fetch('plantillas/alta.hbs')
-//         .then(respuesta => respuesta.text())
-        
-//         var template = Handlebars.compile(plantillaHbs);
-//         let html = template({ productos, validos })
-//         document.getElementById('listado-productos').innerHTML = html 
-//     }
-
-//     catch (error) {
-//         console.error('ERROR', error)
-//     }
-// }
-
-
 async function renderTablaAlta(validos, productos) {
     let plantillaHbs = await fetch('plantillas/alta.hbs').then(r => r.text())
-    // const xhr = new XMLHttpRequest
-    // xhr.open('get','plantillas/alta.hbs')
-    // xhr.addEventListener('load', () => {
-        // if(xhr.status == 200) {
-            // let plantillaHbs = xhr.response
 
             var template = Handlebars.compile(plantillaHbs);
             let html = template({ productos, validos })
             document.getElementById('listado-productos').innerHTML = html            
         }
-    // })
-    // xhr.send()
-    // }
 
 /* ------------------------------------------------------------ */
 /*      Inicializaciones para el funcionamiento del módulo      */
